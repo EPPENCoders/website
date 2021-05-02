@@ -3,7 +3,8 @@
     --light: #eeeeee;
     --yellow: #f2e21b;
     --font: 'Noto Sans JP', sans-serif;
-    --header-size: 64px;
+    --header-size: 6.5vh;
+    font-size: 1.5vh;
 }
 
 * {
@@ -27,8 +28,8 @@ header#main-header {
 }
 
 header#main-header svg#header-logo {
-    height: calc(var(--header-size) - 28px);
-    margin-left: 24px;
+    height: calc(var(--header-size) - 3vh);
+    margin-left: 2.4vh;
 }
 
 header#main-header svg#header-logo use {
@@ -40,7 +41,7 @@ header#main-header svg#header-logo use:hover {
     --header-icon-color: var(--yellow);
 }
 
-main {
+main section#development {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,21 +49,26 @@ main {
     height: calc(100vh - var(--header-size));
 }
 
-main img#main-logo {
-    height: 256px;
+main section#development h1 {
+    font-size: 3vh;
 }
 
-main ul.social-media {
+main section#development img.main-logo {
+    height: 24vh;
+}
+
+main section#development ul.social-media {
+    padding: 0;
     list-style-type: none;
     display: flex;
 }
 
-main ul.social-media li a {
+main section#development ul.social-media li a {
     display: inline-block;
     text-decoration: none;
-    margin: 10px 15px;
-    padding: 7px 21px;
-    border-radius: 30px;
+    margin: 0.9vh 1.4vh;
+    padding: 0.7vh 2vh;
+    border-radius: 5vh;
     font-weight: bolder;
     color: var(--light);
     background-color: var(--dark);
