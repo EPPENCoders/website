@@ -4,10 +4,8 @@
     --yellow: #f2e21b;
     --font: 'Noto Sans JP', sans-serif;
     --header-size: 6.5vh;
+    --footer-size: 10vh;
     font-size: 1.5vh;
-}
-
-* {
     color: var(--dark);
     font-family: var(--font);
 }
@@ -46,7 +44,7 @@ main section#development {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - var(--header-size));
+    height: calc(100vh - var(--header-size) - var(--footer-size));
 }
 
 main section#development h1 {
@@ -66,10 +64,35 @@ main section#development ul.social-media {
 main section#development ul.social-media li a {
     display: inline-block;
     text-decoration: none;
-    margin: 0.9vh 1.4vh;
+    margin: 1vh 1.5vh;
     padding: 0.7vh 2vh;
     border-radius: 5vh;
     font-weight: bolder;
     color: var(--light);
     background-color: var(--dark);
+}
+
+footer#main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+    height: var(--footer-size);
+}
+
+footer#main-footer h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vh;
+    font-weight: bold;
+    color: var(--light);
+}
+
+footer#main-footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4vh;
+    font-weight: normal;
+    color: var(--light);
 }
