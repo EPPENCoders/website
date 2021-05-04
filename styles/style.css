@@ -4,7 +4,6 @@
     --yellow: #f2e21b;
     --font: 'Noto Sans JP', sans-serif;
     --header-size: 6.5vh;
-    --footer-size: 10vh;
     font-size: 1.5vh;
     color: var(--dark);
     font-family: var(--font);
@@ -46,7 +45,7 @@ main section#development {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(90vh - var(--header-size) - var(--footer-size));
+    height: 100vh;
     text-align: center;
 }
 
@@ -83,7 +82,6 @@ footer#main-footer {
     align-items: center;
     justify-content: center;
     background-color: var(--dark);
-    height: var(--footer-size);
     text-align: center;
 }
 
@@ -108,7 +106,6 @@ footer#main-footer p {
 @media (max-aspect-ratio: 8/7) {
     :root {
         --header-size: 8vh;
-        --footer-size: 15vh;
         font-size: 1.8vh;
     }
 
