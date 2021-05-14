@@ -2,6 +2,8 @@
     --dark: #243136;
     --light: #eeeeee;
     --yellow: #f2e21b;
+    --dark-green: #486c7c;
+    --darker-green: #334852;
     --font: 'Noto Sans JP', sans-serif;
     --header-size: 6.5vh;
     font-size: 1.5vh;
@@ -125,18 +127,15 @@ footer#main-footer p {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        
         color: var(--light);
-        --lighter-dark: #334852;
-        --darker-light: #486c7c;
     }
 
     body {
-        background-color: var(--lighter-dark);
+        background-color: var(--darker-green);
     }
 
     main section#development ul.social-media li a {
         color: var(--light);
-        background-color: var(--darker-light);
+        background-color: var(--dark-green);
     }
 }
