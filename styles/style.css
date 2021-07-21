@@ -47,8 +47,9 @@ main section#development {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 73vh;
+    min-height: 73vh;
     text-align: center;
+    overflow: hidden;
 }
 
 main section#development h1 {
@@ -112,13 +113,11 @@ footer#main-footer p {
     }
 
     main section#development ul.social-media {
+        flex-direction: column;
         padding-left: 0;
-        align-items: center;
-        flex-wrap: wrap;
     }
 
     main section#development ul.social-media li {
-        flex-basis: 50%;
         text-align: center;
     }
 }
